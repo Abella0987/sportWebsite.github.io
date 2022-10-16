@@ -1,0 +1,285 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif; 
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(pictures/homeimage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.image{
+    height: 3.6rem;
+    width: 3.6rem;
+    padding: 2rem;
+}
+.image:hover{
+    border-radius: 5rem;
+    transition: 0.5s ease;
+}
+
+/* Navigation style */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: crimson;
+    display: block;
+    margin: auto;
+    transition: 0.5s ease;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    width: 50%;
+    background-color: rgba(4,9,30,0.7);
+    border-radius: 2rem;
+    color: greenyellow;
+    font-size: 2rem;
+    padding: 20px;
+}
+.text-box p{
+    padding: 2.8rem;
+    font-size: 18px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid crimson;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+}
+.hero-btn:hover{
+    border: 1px solid yellowgreen;
+    background: yellowgreen ;
+    transition: 1s;
+}
+
+@media(max-width:700px){
+    .text-box p{
+        font-size: 19px;
+    }
+    .hero-btn{
+        font-size: 14px;
+    }
+    .text-box h1{
+        width: 100%;
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: none;
+    }
+    .image{
+        height: 2rem;
+        width: 2rem;
+        padding: 2rem ;
+        position: relative;
+    }
+
+} 
+
+
+/* Sports club style */
+.sport-clubs{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+.sport-clubs h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+.sport-clubs p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.eneoLetu{
+    flex-basis: 40%;
+    background-color: rgba(162, 169, 199, 0.7);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.eneoLetu h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 20px;
+}
+.eneoLetu:hover{
+    box-shadow: 0 0 20px 0px;
+}
+
+/* WomenFootball style */
+.WomenFootball{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+.Alan1 img{
+    height: 25rem;
+}
+.Alan1 .image3 img{
+   width: 30%;
+}
+.Alan1{
+    flex-basis: 30%;
+    border-radius: 20px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    left: 0;
+}
+.layer:hover{
+    background-color:rgba(162, 169, 199, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 10px;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+        margin: auto;
+        padding: 50px;
+        text-align: center;
+    }
+}
+
+
+/* funnsWords style */
+.funnsWords{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.funns-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: rgba(162, 169, 199, 0.7);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.funns-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.funns-col h3{
+    padding-top: 15px;
+}
+
+
+/* call me */
+.cta{
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(pictures/footballpitch.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* Footer */
+.footer{
+     width: 100%;
+     text-align: center;
+     padding: 30px;
+}
+
+.footer h4{
+    margin: 25px 0 20px;
+    font-weight: 600;
+
+}
